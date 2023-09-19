@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<style>
+        p {
+            color: green;
+            font-size: 40px;
+        }
+    </style>
+     Esse é o jeito de formar dentro do arquivo, mas podemos fazer um link e o estilo em css em outro arquivo.-->
+        
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <link rel="stylesheet" href="css/list.css">
+    
+    <title>Aprendendo CSS</title>
+</head>
+<body>
+ 
+    
+    <!-- 1 Inline CSS-->
+    <h1 style="color: red">Mudas a cor com o Inline</h1>
+    <h1 style="background-color: bisque;">Outra cor</h1><!--backgroud significa atrás, então estou mudando a cor do fundo-->
+<hr>
+
+    <!-- 2 Multiplas regras -->
+    <h1 style="color: purple; font-size: 50px; border: 8px solid rgb(255, 0, 0);"> Mudar cor e tamanho da fonte</h1> <!-- ponto e vírgula divide o argumento e colocando o mouse em cima da cor, é possível alterar o tom da cor-->
+<hr>
+
+    <!-- 3 Internal CSS -->
+    <p>Fui estilizado pelo internal CSS</p>
+    <p>Fui estilizado pelo internal CSS</p>
+    <p>Fui estilizado pelo internal CSS</p>
+    <!-- Declarei sua cor com a tag style no cabeçalho, antes do title-->
+<hr>
+
+    <!-- 4 External -->
+    <p> Fui estilizado pelo external CSS</p>
+
+    <!-- 5 Ordem do CSS -->
+<hr>
+    <p style="color: red;">Ordem do CSS</p>
+    <p>Ordem do CSS</p>
+<hr>
+    <ul>
+        <li><i><b>Banana</b></i></li>
+        <li>Maça</li>
+        <li>Abacate</li>
+    </ul>
+
+    <!-- 8 Classes -->
+<hr>
+    <p class="paragrafo01"> Algum elemento </p>
+    <!--Cria uma classe pra você editar somente ela depois no arquivo CSS, mas você precisa chamar ela com .paragrafo01-->
+
+    <!-- 8.b Classes-->
+    <p class="paragrafo02">Algum texto 01</p>
+    <p class="paragrafo02">Algum texto 02</p>
+    <p class="paragrafo02">Algum texto 03</p>
+    <!--p.paragrafo*3 cria 3 classes de paragrafos de uma forma mais rápida-->
+
+<!-- crt + ; é atalho para o cometário -->
+
+    <!-- 09 ID -->
+    <h1 id="exclusive-title">Este é um título com id</h1>
+    <h1>Não sou exclusivo</h1>
+    <!-- Os id são únicos na mesma página, ou seja, só posso usar 1 vez para editar algo especifico -->
+
+    <!-- 10 Multiplas regras -->
+    <h2 id="algum-titulo"class="titulo">Algum texto 01</h2>
+    <h2 class="titulo">Algum texto 02</h2>
+    <h2>Algum texto 03</h2>
+
+    <!-- 11 nome de cor -->
+    <p class="color-name">Qualquer texto para o nome da cor</p>
+
+    <!-- 12 hex -->
+    <p class="hex">Parágrafo com hex</p>
+    <p class="hex-2">Parágrafo com hex -2</p>
+
+    <!-- 13 Aprofundando hex -->
+    <p class="simple-hex">Hex simplificado</p>
+    <p class="simple-hex-2">Hex simplificado 2</p>
+
+    <!-- 14 RGB -->
+    <p class="rgb">Estilizando com RGB</p>
+    <p class="mixed-rgb">Mixed estilizando com RGB</p>
+
+    <!-- 15 RGBA -->
+    <p class="rgba">Estilizando com rgba</p>
+
+    <!-- 16 hs -->
+    <p class="hsl">Esse parágrafo foi estilizado pelo hsl</p>
+    <p class="hsl-2">Esse parágrafo foi estilizado pelo hsl-2</p>
+
+    <!-- 17 Background color -->
+    <p class="bg">Mude o meu bg</p>
+    <p class="bg-2">Mude o meu bg-2</p>
+
+    <!-- 18 Opacidade bg (background color) -->
+    <!-- div.bgopacity>p -->
+    <div class="bgopacity">
+        <p>Estou aqui!</p>
+    </div>
+    <div class="bgopacity-2">
+            <p>Estou aqui quase invisivel</p>
+    </div>
+
+    <!-- div#paragrafounico>p*3 -->
+    <div id="paragrafounico">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <!--  div#lista.ul>li*3 é como se o # fosse o id e o .(ponto) fosse a clase -->
+    <div id="lista" class="ul">
+        <li></li>
+        <li></li>
+        <li></li>
+     </div>
+    
+     <!-- 19 RGB com opacidade -->
+     <div class="rgba-opacity">
+        <h1>Título visível</h1>
+     </div>
+
+     <!-- 20 bg imagem de fundo -->
+     <h1 class="bg-image">Este título tem uma imagem</h1>
+
+     <!-- 21 Centralizar img no bg -->
+     <div class="centered-bg"></div>
+     <div class="not-centered-bg"></div>
+
+     <!-- Largura e aluta -->
+     <div class="without-padding">Este não tem padding</div>
+     <div class="padding">Elemento com padding</div>
+
+     <!-- 23 - largura e altura -->
+     <div class="height1"></div>
+     <div class="height2"></div>
+
+     <!-- 24 Padding individual -->
+    <p class="padding-individual">Esse elemento tem padding individual</p>
+
+     <!-- 25 shorthand paddind -->
+     <p class="shortpad">Algum texto</p>
+     <p class="shortpad-2">Algum texto 2</p>
+
+     <!-- 26 padding e width -->
+     <div class="w-border-box">Algum conteúdo</div>
+     <div class="border-box">Algum conteúdo 2</div>
+
+     <!-- 27 bordas -->
+     <div class="border">Borda</div>
+     <div class="border2">Borda 2s</div>
+
+     <!-- 28 bordas individuais -->
+     <p class="border-esquerda">Borda Esquerda</p>
+     <p class="border-abaixo">Borda inferior</p>
+
+     <!-- 29 bordas arredondadas -->
+     <p class="arredondadas">bordas arredondadas</p>
+     <p class="arredondadas-2">bordas arredondadas 2</p>
+
+     <!-- 30 Margin -->
+     <div class="margin">Eu tenho margin</div>
+     <div class="margin-2">Eu tenho margin</div>
+     <div class="margin-3">Eu tenho margin</div>
+
+
+
+
+
+
+</body>
+</html>

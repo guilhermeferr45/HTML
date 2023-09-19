@@ -1,0 +1,268 @@
+/*p {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}*/
+
+/* 8 Classes */
+.paragrafo01 {
+    background-color: #000;
+    color: aqua;
+    padding: 5px; /* Espaçamento entre as linhas*/
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+/* 8.b Classes*/
+.paragrafo02{
+    background-color: aqua;
+    color: #000;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: overline;
+}
+
+/* 9 id*/
+#exclusive-title{
+    background-color: purple;
+    color: beige;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* 10 multiplas regras*/
+h2{
+    border-bottom: 2px dotted red;
+}
+
+.titulo{
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo{
+    border-bottom: 4px solid green;
+}
+
+/* 11 Nome da cor */
+.color-titulo{
+    color: crimson;
+}
+
+/* 12 - HEX */
+.hex{
+    color: #55a398;
+}
+
+.hex-2{
+    color: #00eaff;
+}
+
+/* 13 Aprofundando hex */
+.simple-hex{
+    /*color: #333333;*/
+    color: #333;
+}
+
+.simple-hex-2{
+    /*color: #aa55ff;*/
+    color: #a5f;
+}
+
+/* 14 RGB */
+.rgb{
+    color: rgb(255,0,0);
+}
+
+.mixed-rgb{
+    color: rgb(199,21,47);
+}
+
+/* 15 RGBA */
+.rgba{
+    color: rgba(100, 199, 45, 0.3);
+}
+
+/* 16 hsl*/
+.hsl{
+    color: hsl(100, 82%, 48%)
+}
+.hsl-2{
+    color: hsl(201, 82%, 48%)
+}
+
+/* 17 Backgorund color */
+.bg{
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-2{
+    background-color: rgb(200,20, 40);
+}
+
+.bgopacity{  
+    background-color: green;
+    opacity: 0.2;
+}
+
+.bgopacity-2{  
+background-color: #999;
+color: #000;
+opacity: 0.5;
+}
+
+/*  19 RGB com opacidade */
+.rgba-opacity{
+    background-color: rgba(90,12,20,0.2);
+    /* Esse 0.2 é a opacidade */
+    color: #000;
+}
+
+/* 20 bg imagem */
+.bg-image{
+    padding: 10px; 
+    /* Espaçamento do elemento */
+    background-image: url(../img/nature.jpg);
+    /* url é o link que busca a imagem, em html quem faz essa busca é o src. Dentro do parentes, como a imagem está num nível anterior,  . (ponto) é como se informasse que estamos voltando para a pasta 02.css*/
+    color: #fff;
+}
+
+body{
+    /*background-image: url(../img/bridge.jpg);*/
+    /* coloa uma imagem no fundo */
+    background-color: #999;
+}
+
+/* 21 centralizar img no bg */
+.centered-bg,
+.not-centered-bg
+/* Se for usar a mesma configuração, para evitar repetição de código, podemos fazer da forma acima. NÃO ESQUEÇA DA VÍRGULA */
+{
+    background-image: url(../img/bridge.jpg);
+    width: 400px;
+    height: 400px;
+    /* Quando coloca a imagem, é necessário defir o tamanho dela */
+}
+
+.centered-bg{
+    background-position: center;
+    background-size: cover;
+    /* Centralizou a imagem conforme as dimensões especificadas e ajustou a imagem com o cover */
+}
+
+/* 22 largura e altura */
+.without-padding,
+.padding{
+    background-color: #111;
+    color: #fff;
+}
+
+.padding{
+    background-color: #333;
+    padding: 20px;
+}
+
+/* 23 largura e altura */
+.height1{
+    height: 200px;
+    width: 100px;
+    background-color: rebeccapurple;
+}
+
+.height2{
+    height: 300px;
+    background-color: #333;
+}
+
+/* 24 padding individual */
+.padding-individual{
+    background-color: #222;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 20px;
+    /* padding: 5px 50px 40px 10px; */
+}
+
+/* 25 shorthand padding */
+.shortpad{
+    background-color: #444;
+    color: #fff;
+    padding: 6px 12px 18px 24px;
+    /* seguindo o sentido horário, top,right, bottom e left */
+}   
+.shortpad-2{
+    background-color: #555;
+    color: #fff;
+    /*padding: 10px 20px 10px 20px;*/
+    padding: 10px 20px;/*padding resumido com 10px em cima e em baixo e 20 nas laterais*/
+}
+
+/* 26 padding e width */
+.w-border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #555;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* 27 bordas */
+.border{
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border2{
+    border: 5px solid red;
+    padding: 25px;
+    background-color: #895;
+}
+
+/* 28 Bordas individuais */
+.border-esquerda{
+    border-left: 3px solid red;
+}
+
+.border-abaixo{
+    border-bottom: 5px solid red;
+}
+
+/* 29 bordas arredondadas */
+.arredondadas{
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.arredondadas-2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.margin{
+    margin: 10px;
+    background-color: #222;
+}
+.margin-2{
+    margin-top: 10px;
+    background-color: #222;
+}
+.margin-3{
+    margin: 5px 10px 15px 20px;
+    background-color: #666;
+}
