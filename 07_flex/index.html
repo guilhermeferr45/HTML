@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Display flex por padrão deixa um abaixo do outro, mas são quer dizer que ele deixa um ao lado do outro, você precisa configurar, dar comando pra ficar um embaixo do outro, quanto quer ao lado, etc. -->
+
+    <!-- Flexbox -->
+    <div class="flex">
+        <p>Meu</p>
+        <p>Primeiro</p>
+        <p>Flex</p>
+        <p>Box</p>
+    </div>
+
+    <!-- Flex direction, comando column deixa os elementos um abaixo do outro. -->
+    <div class="flex-column">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <p>4</p>
+    </div>
+
+    <!-- Wrap define quantos elementos quero por linha -->
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Posicionamento de conteúdo -->
+    <h2>Center</h2>
+    <div class="center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h2>Space-around</h2>
+    <div class="space-around">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h2>Space-between</h2>
+    <div class="space-between">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h2>End</h2>
+    <div class="end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Alterando os elementos filhos dentro do elemento pai -->
+    <h2>Align-center</h2>
+    <div class="align-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h2>Align-end</h2>
+    <div class="align-end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h2>Stretch</h2>
+    <div class="stretch">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- GAP -->
+    <div class="gap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Order, podemos alterar as ordens dos elementos filhos -->
+    <h2>Order</h2>
+    <div class="order">
+        <div class="box" id="three">3</div>
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
+    </div>
+
+    <!-- Grow, muda a proporção do elemento filho, propriedade de crescimento -->
+    <h2>Grow</h2>
+    <div class="grow">
+        <div class="box"></div>
+        <div class="box big"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Basis -->
+    <h2>Basis</h2>
+    <div class="basis">
+        <div class="box"></div>
+        <div class="box big"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Shrink oposto do grow, diminui o elemento -->
+    <h2>Shrink</h2>
+    <div class="shrink">
+        <div class="box"></div>
+        <div class="box small"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Flex shorthand conseguimos configurar o grow, basis e shrink por aqui -->
+    <h2>Shorthand</h2>
+    <div class="shorthand">
+        <div class="box"></div>
+        <div class="box different"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Auto alinhamento -->
+    <h2>Auto alinhamento</h2>
+    <div class="auto-alignment">
+        <div class="box"></div>
+        <div class="box different"></div>
+        <div class="box"></div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

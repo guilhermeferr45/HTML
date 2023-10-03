@@ -1,0 +1,192 @@
+.flex{
+    display: flex;
+}
+
+/* Flex direction, comando column deixa uma abaixo do outro */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrap define quantos eu quero um do lado do outro por linha*/
+
+.wrap{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid green;
+}
+
+/* Alinhar conteúdo ao centro */
+
+.center,
+.space-around,
+.space-between,
+.end {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Coloquei .box no final pra ele reconher */
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box{
+    width: 50px;
+}
+
+/* Centraliza o box na página */
+.center{
+    justify-content: center;
+}
+
+/* Divide na tela os box com a distância certa entre um e outro */
+.space-around{
+    justify-content: space-around;
+}
+
+/* Divide o espaçamento entre os elementos com o da esquerda colado na tela e o direito também */
+.space-between{
+    justify-content: space-between;
+}
+
+/* Coloca os box na direita */
+.end{
+    justify-content: end;
+}
+
+/* Alterdando elemento PAI */
+.align-center,
+.align-end,
+.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+/* Alterando os filhos */
+.align-center .box,
+.align-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+/* Alinhando os elementos filhos dentro do elemento pai */
+.align-center{
+    align-items: center;/*Essa tag ela centraliza o elemento na linha*/
+    justify-content: center;/*Esse elemento centraliza a coluna*/
+}
+
+.align-end{
+    align-items: flex-end; 
+}
+
+.stretch .box{
+    height: auto;
+}
+
+/* GAP */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid violet;
+    gap: 10px; /*deixa um espaço entre os elementos*/
+}
+
+.gap .box{
+    width: 32%;
+}
+
+/* Order, alterar a ordem dos elementos filhos */
+.order{
+    display: flex;
+}
+
+#one{
+    order: 1;
+}
+
+#two{
+    order: 2;
+}
+
+#three{
+    order: 3;
+}
+
+/* Grow */
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+
+.grow .big{
+    flex: 2;
+}
+
+/* Basis */
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex-grow: 1;
+
+}
+
+/* Shrink */
+.shrink{
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: flex;
+}
+
+/* Shorthand */
+.shorthand{
+    display: flex
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different{
+    flex: 3 1 400px;
+}
+
+/* Auto alinhamento */
+.auto-alignment{
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid blue;
+}
+
+.auto-alignment .different{
+    align-self: center;/*alinha automaticamente o elemento*/
+}
